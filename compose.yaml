@@ -10,11 +10,16 @@ services:
       - "8080:8080"
     environment:
       - SPRING_PROFILES_ACTIVE=dev
+      - GRADLE_OPTS="-Dorg.gradle.daemon=true -Dorg.gradle.configureondemand=true"
     volumes:
       # Share Gradle cache between builds
-      - gradle-cache:/home/gradle/.gradle
-      # If you need to share the local .gradle cache with the container
-      # - ~/.gradle:/home/gradle/.gradle
+      - gradle-cache:/home/app/.gradle
+      # Share source code for hot reloading
+      - ./:/app
+      # Share Gradle daemon process
+      - ~/.gradle/daemon:/home/app/.gradle/daemon
+      # Development-specific volume for Spring DevTools
+      - ./build/classes:/app/build/classes
 
 volumes:
   gradle-cache:
