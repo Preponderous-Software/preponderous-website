@@ -1,4 +1,6 @@
-FROM eclipse-temurin:21-jdk
+
+# Build stage
+FROM eclipse-temurin:21-jdk AS build
 
 WORKDIR /app
 
@@ -14,18 +16,27 @@ COPY settings.gradle .
 # Make the gradlew script executable
 RUN chmod +x ./gradlew
 
-# Configure Gradle to use the daemon
-ENV GRADLE_OPTS="-Dorg.gradle.daemon=true -Dorg.gradle.configureondemand=true -Dorg.gradle.parallel=true"
+# Copy the source code
+COPY src src
 
-# Environment variables for Spring Boot DevTools
-ENV SPRING_DEVTOOLS_RESTART_ENABLED=true
-ENV SPRING_DEVTOOLS_LIVERELOAD_ENABLED=true
+# Build the application
+RUN ./gradlew build --no-daemon -x test
 
-# Disable Docker Compose support in Spring Boot
+# Runtime stage
+FROM eclipse-temurin:21-jre
+
+WORKDIR /app
+
+# Copy the built application from the build stage
+COPY --from=build /app/build/libs/*.jar app.jar
+
+# Environment variables for Spring Boot
+ENV SPRING_DEVTOOLS_RESTART_ENABLED=false
+ENV SPRING_DEVTOOLS_LIVERELOAD_ENABLED=false
 ENV SPRING_DOCKER_COMPOSE_ENABLED=false
 
 # Expose the port the app runs on
 EXPOSE 8080
 
-# Command to run the application with development options
-CMD ["./gradlew", "bootRun", "--no-daemon", "-Dspring-boot.run.jvmArguments='-Dspring.devtools.restart.enabled=true -Dspring.devtools.livereload.enabled=true'"]
+# Command to run the application
+CMD ["java", "-jar", "app.jar"]
