@@ -15,50 +15,15 @@ preponderous:
       github-link: "https://github.com/Preponderous-Software/Beyond-Nations"
       technology: "C#"
 
-    - title: "Book-Readings-Generator"
-      description: "Useful for when you have a set amount of days to read a book. Gives you readings to do daily based on how much time you have left."
-      github-link: "https://github.com/Preponderous-Software/Book-Readings-Generator"
-      technology: "Python"
-
-    - title: "c-project-template"
-      description: "This is a template for a C project."
-      github-link: "https://github.com/Preponderous-Software/c-project-template"
-      technology: "Shell"
-
     - title: "Collide"
       description: "Allows the user to generate ideas from the collisions of paired keywords."
       github-link: "https://github.com/Preponderous-Software/Collide"
       technology: "Python"
 
-    - title: "cpp-project-template"
-      description: "This is a template for a C++ project."
-      github-link: "https://github.com/Preponderous-Software/cpp-project-template"
-      technology: "Shell"
-
     - title: "env-lib-cpp"
       description: "Provides base classes for creating two-dimensional virtual worlds."
       github-link: "https://github.com/Preponderous-Software/env-lib-cpp"
       technology: "C++"
-
-    - title: "env-lib-cpp-project-template"
-      description: "This is a template for a C++ project using env-lib-cpp."
-      github-link: "https://github.com/Preponderous-Software/env-lib-cpp-project-template"
-      technology: "Shell"
-
-    - title: "EnvGameTemplate"
-      description: "A template for a game involving a 2D virtual environment."
-      github-link: "https://github.com/Preponderous-Software/EnvGameTemplate"
-      technology: "Python"
-
-    - title: "ExamplePonderApplication"
-      description: "This is an example of an application created with Ponder."
-      github-link: "https://github.com/Preponderous-Software/ExamplePonderApplication"
-      technology: "Java"
-
-    - title: "ExamplePonderPlugin"
-      description: "This is an example of a Spigot plugin created with Ponder."
-      github-link: "https://github.com/Preponderous-Software/ExamplePonderPlugin"
-      technology: "Java"
 
     - title: "FishE"
       description: "Explore a fishing village and perform actions in it."
@@ -75,11 +40,6 @@ preponderous:
       github-link: "https://github.com/Preponderous-Software/Kreatures"
       technology: "Python"
 
-    - title: "Land-Generator-PoC"
-      description: "This unity asset generates land based on input from the player."
-      github-link: "https://github.com/Preponderous-Software/Land-Generator-PoC"
-      technology: "C#"
-
     - title: "microbiome"
       description: "Witness the activity of a virtual microbial community."
       github-link: "https://github.com/Preponderous-Software/microbiome"
@@ -89,6 +49,11 @@ preponderous:
       description: "Control an ever-increasingly growing ophidian in a virtual environment."
       github-link: "https://github.com/Preponderous-Software/Ophidian"
       technology: "Python"
+
+    - title: "Parpt"
+      description: "Prioritize software projects using structured metrics"
+      github-link: "https://github.com/Preponderous-Software/Parpt"
+      technology: "Java"
 
     - title: "Patchwork"
       description: "Patchwork is a lightweight tool for visualizing 2D environments, built with Python."
@@ -119,16 +84,6 @@ preponderous:
       description: "Abstracts out the handling of Simple DirectMedia Layer. Currently includes Text and Button tools and provides support for drawing rectangles to the screen."
       github-link: "https://github.com/Preponderous-Software/sdl-assist"
       technology: "C++"
-
-    - title: "SDLGrid"
-      description: "A Grid class whereby you can set the screen width, screen height and the # of rows and columns. Uses SDL."
-      github-link: "https://github.com/Preponderous-Software/SDLGrid"
-      technology: "C++"
-
-    - title: "SimpleServer"
-      description: "A simple java multi-server that allows clients to connect and request the square of a number."
-      github-link: "https://github.com/Preponderous-Software/SimpleServer"
-      technology: "Java"
 
     - title: "Tic-Tak-Toe"
       description: "Play Tic Tac Toe against the computer."
