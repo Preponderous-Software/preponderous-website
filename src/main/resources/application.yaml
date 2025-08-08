@@ -15,30 +15,10 @@ preponderous:
       github-link: "https://github.com/Preponderous-Software/Beyond-Nations"
       technology: "C#"
 
-    - title: "Collide"
-      description: "Allows the user to generate ideas from the collisions of paired keywords."
-      github-link: "https://github.com/Preponderous-Software/Collide"
-      technology: "Python"
-
     - title: "env-lib-cpp"
       description: "Provides base classes for creating two-dimensional virtual worlds."
       github-link: "https://github.com/Preponderous-Software/env-lib-cpp"
       technology: "C++"
-
-    - title: "FishE"
-      description: "Explore a fishing village and perform actions in it."
-      github-link: "https://github.com/Preponderous-Software/FishE"
-      technology: "Python"
-
-    - title: "graphik"
-      description: "Provides some simple methods that developers can use in graphics programming."
-      github-link: "https://github.com/Preponderous-Software/graphik"
-      technology: "Python"
-
-    - title: "Kreatures"
-      description: "Place a creature into a virtual environment with other creatures and observe its activity."
-      github-link: "https://github.com/Preponderous-Software/Kreatures"
-      technology: "Python"
 
     - title: "microbiome"
       description: "Witness the activity of a virtual microbial community."
@@ -50,20 +30,10 @@ preponderous:
       github-link: "https://github.com/Preponderous-Software/Ophidian"
       technology: "Python"
 
-    - title: "Parpt"
-      description: "Prioritize software projects using structured metrics"
-      github-link: "https://github.com/Preponderous-Software/Parpt"
-      technology: "Java"
-
     - title: "Patchwork"
       description: "Patchwork is a lightweight tool for visualizing 2D environments, built with Python."
       github-link: "https://github.com/Preponderous-Software/Patchwork"
       technology: "Python"
-
-    - title: "Ponder"
-      description: "This Kotlin library contains a collection of modules that assist with the development of console applications and Minecraft plugins."
-      github-link: "https://github.com/Preponderous-Software/Ponder"
-      technology: "Kotlin"
 
     - title: "preponderous-website"
       description: "Official website for Preponderous Software"
@@ -78,16 +48,6 @@ preponderous:
     - title: "Roam"
       description: "Explore a procedurally-generated 2D world and interact with your surroundings."
       github-link: "https://github.com/Preponderous-Software/Roam"
-      technology: "Python"
-
-    - title: "sdl-assist"
-      description: "Abstracts out the handling of Simple DirectMedia Layer. Currently includes Text and Button tools and provides support for drawing rectangles to the screen."
-      github-link: "https://github.com/Preponderous-Software/sdl-assist"
-      technology: "C++"
-
-    - title: "Tic-Tak-Toe"
-      description: "Play Tic Tac Toe against the computer."
-      github-link: "https://github.com/Preponderous-Software/Tic-Tak-Toe"
       technology: "Python"
 
     - title: "Viron"
