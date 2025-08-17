@@ -1,98 +1,62 @@
-# 📘 PLANNING.md – Preponderous Website
+# PLANNING.md – Preponderous Website
 
-This document outlines the current issues and future development plans for the official Preponderous Software website. The site is being built with Java 21, Spring Boot, Gradle, and Docker. It will serve as a hub for showcasing projects, connecting with the community, and offering account-based services in the future.
-
----
-
-## ✅ Current Open Issues
-
-### #10 – Organize projects into games, assets, and templates
-Group listed projects on the homepage or /projects page by category for easier navigation and clarity.
-
-### #9 – Fix or remove links at bottom of page
-Audit footer links and either update or remove broken/outdated ones.
-
-### #8 – Add card for 'Parpt' project
-Include a visual and textual card on the projects page describing the *Parpt* tool, with a link to its GitHub repository.
-
-### #5 – Fix "Main class name has not been configured" error upon docker build
-Update `build.gradle` or `Dockerfile` to ensure that the main class is correctly defined for Spring Boot when containerized.
+This document outlines the strategic vision and development plans for the official Preponderous Software website. The site is being built with Java 21, Spring Boot, Gradle, and Docker. It will serve as a hub for showcasing projects, sharing the Reforged Initiative, connecting with the community, and eventually supporting account-based services.
 
 ---
 
-## 🧭 Planned Features and Improvements
+## Core Objectives
 
-### 🌐 Navigation and Content
+- **Showcase Projects**  
+  Present active, archived, and flagship projects in a clear, categorized way. Highlight how each connects to the broader Preponderous ecosystem.
 
-- **Add dynamic /projects route**  
-  Display categorized projects (Games, Assets, Templates) with descriptions, links, and status indicators.
+- **Communicate Vision**  
+  Provide a dedicated space to tell the story of Preponderous—from its origins (*Kreatures*, prototypes) to the present (*Reforged Initiative*).  
+  Explain the five core services: UserAuth, Monetization, Viron, Tick, and Executor.
 
-- **Add /about page**  
-  Describe the mission, values, and team behind Preponderous Software.
+- **Foster Community**  
+  Make it easy for contributors to get involved. Highlight Discord, GitHub, and RFCs, and provide pathways for onboarding.
 
-- **Add /contact page**  
-  Display contact options, social media links, and possibly a contact form.
+- **Establish Identity**  
+  Clearly communicate Preponderous’ mission, values, and unique role in building modular simulation-based games.
 
-- **Improve footer layout and functionality**  
-  Add navigation links, license information, and dynamic year updates.
-
-- **Implement `/legal` route**  
-  Host licensing, copyright, and compliance documents.
-
----
-
-### 🔐 Authentication & User Accounts
-
-- **Integrate UserAuth service**  
-  Connect to the standalone UserAuth module for user registration, login, and JWT-based session management.
-
-- **Add frontend forms for login/register**  
-  Use Thymeleaf + HTMX to render interactive, responsive forms.
-
-- **Create /dashboard route**  
-  Allow logged-in users to manage their profile, view starred or followed projects, and adjust preferences.
-
-- **Protect user routes**  
-  Secure account-related pages with session token validation.
+- **Support Growth**  
+  Build the foundation for user accounts, dashboards, and interactive services powered by Preponderous modules.
 
 ---
 
-### 🧪 Testing & CI/CD
+## Planned Features
 
-- **Improve unit test coverage**  
-  Add controller and service tests using JUnit and Spring Boot test framework.
+### Navigation and Content
+- `/projects` → categorized overview of Games, Services, and Tools.  
+- `/vision` → history, Reforged Initiative, and future direction.  
+- `/community` → links to Discord, GitHub, contributor guides, and announcements.  
+- `/about` → mission, values, and organizational story.  
+- `/contact` → social links and optional form.  
+- `/legal` → licensing, copyright, and compliance.
 
-- **Set up GitHub Actions for CI**  
-  Automate testing and Docker builds on push to `main`.
+### Authentication & Accounts
+- Integrate with **UserAuth** for registration, login, and session management.  
+- Provide a `/dashboard` for authenticated users to manage their presence and preferences.  
+- Secure account routes with token validation.
 
-- **Add staging environment**  
-  Deploy latest `main` branch to Fly.io or similar for review before production deployment.
-
----
-
-### 🐳 Deployment & Infrastructure
-
-- **Enable HTTPS with Let's Encrypt**  
-  Ensure all traffic is encrypted using a reverse proxy like Traefik or Caddy.
-
-- **Docker Compose for local dev**  
-  Bundle app and database (if needed) into a full-stack local development environment.
-
-- **Persistent Logging**  
-  Configure log rotation and output streaming for long-term observability.
+### Testing & Infrastructure
+- Expand unit and integration tests for stability.  
+- Automate builds, tests, and deployment with CI/CD pipelines.  
+- Provide a staging environment for safe review before production release.  
+- Support encrypted HTTPS traffic and persistent logging.
 
 ---
 
-## 📌 Long-Term Goals
+## Long-Term Goals
 
-- Showcase dynamic stats for Preponderous projects (stars, contributors, commits)
-- Add a blog or changelog section for community updates
-- Support localization/internationalization (i18n)
-- Offer download links or demos for each game/tool
-- Display real-time GitHub issue activity using the GitHub API
-- Enable newsletter signup (integrated with Mailchimp or Buttondown)
-- Eventually support a modular plugin system for content extension
+- Dynamic project stats (stars, contributors, commits).  
+- Blog or changelog for community updates.  
+- Internationalization (i18n) for global reach.  
+- Download links or demos for games/tools.  
+- Real-time GitHub activity integration.  
+- Newsletter signup for ongoing updates.  
+- Modular extension system for future content growth.  
 
 ---
 
-_Last updated: August 4, 2025_
+_Last updated: August 17, 2025_
